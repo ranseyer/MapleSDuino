@@ -13702,11 +13702,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="173.99" y1="220.98" x2="181.61" y2="220.98" width="0.1524" layer="91"/>
 <label x="175.26" y="220.98" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="31/SPI2_SS"/>
-<wire x1="133.35" y1="113.03" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
-<label x="124.46" y="113.03" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="CC_IN_1" class="0">
 <segment>
@@ -13868,6 +13863,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="CC0" gate="G$1" pin="CSN"/>
 <wire x1="99.06" y1="220.98" x2="106.68" y2="220.98" width="0.1524" layer="91"/>
 <label x="100.33" y="220.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="31/SPI2_SS"/>
+<wire x1="133.35" y1="113.03" x2="116.84" y2="113.03" width="0.1524" layer="91"/>
+<label x="124.46" y="113.03" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
