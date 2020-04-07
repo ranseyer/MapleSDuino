@@ -12589,26 +12589,25 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 </deviceset>
 </devicesets>
 </library>
-<library name="Martin-Communication-V4">
+<library name="CC1101">
 <packages>
 <package name="CC1101_MODULE1_SMD">
-<description>from locutus@forum.fhem.de
-modified by ranseyer.</description>
-<wire x1="14.9" y1="10.3" x2="14.896" y2="-1.509" width="0.2032" layer="21"/>
-<wire x1="14.896" y1="-1.509" x2="-0.3" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="-0.3" y1="-1.5" x2="-0.3" y2="10.3" width="0.2032" layer="21"/>
-<wire x1="-0.3" y1="10.3" x2="14.9" y2="10.3" width="0.2032" layer="21"/>
-<smd name="ANT" x="14.889" y="4.381" dx="1.9304" dy="0.8128" layer="1"/>
-<smd name="CSN" x="-0.3048" y="0.3048" dx="1.9304" dy="0.8128" layer="1"/>
-<smd name="GDO0" x="-0.3048" y="1.6256" dx="1.9304" dy="0.8128" layer="1"/>
-<smd name="GDO2" x="-0.3048" y="2.9464" dx="1.9304" dy="0.8128" layer="1"/>
-<smd name="GND@0" x="-0.3048" y="7.9248" dx="1.9304" dy="0.8128" layer="1"/>
-<smd name="GND@1" x="14.889" y="6.381" dx="1.9304" dy="1.6" layer="1"/>
-<smd name="GND@2" x="14.889" y="2.381" dx="1.9304" dy="1.6" layer="1"/>
-<smd name="MISO" x="-0.3048" y="4.2672" dx="1.9304" dy="0.8128" layer="1"/>
-<smd name="MOSI" x="-0.3048" y="6.7056" dx="1.9304" dy="0.8128" layer="1"/>
-<smd name="SCLK" x="-0.3048" y="5.4864" dx="1.9304" dy="0.8128" layer="1"/>
-<smd name="VCC" x="-0.3175" y="9.2375" dx="1.9304" dy="0.8128" layer="1"/>
+<description>from locutus@forum.fhem.de</description>
+<wire x1="18.796" y1="15.509" x2="18.796" y2="-1.509" width="0.2032" layer="21"/>
+<wire x1="18.796" y1="-1.509" x2="-0.254" y2="-1.509" width="0.2032" layer="21"/>
+<wire x1="-0.254" y1="-1.509" x2="-0.254" y2="15.509" width="0.2032" layer="21"/>
+<wire x1="-0.254" y1="15.509" x2="18.796" y2="15.509" width="0.2032" layer="21"/>
+<smd name="ANT" x="19" y="5.96" dx="1.9304" dy="0.8128" layer="1"/>
+<smd name="CSN" x="0" y="0" dx="1.9304" dy="0.8128" layer="1"/>
+<smd name="GDO0" x="0" y="2" dx="1.9304" dy="0.8128" layer="1"/>
+<smd name="GDO2" x="0" y="4" dx="1.9304" dy="0.8128" layer="1"/>
+<smd name="GND@0" x="0" y="12" dx="1.9304" dy="0.8128" layer="1"/>
+<smd name="GND@1" x="19" y="8.5" dx="1.9304" dy="1.905" layer="1"/>
+<smd name="GND@2" x="19" y="3.42" dx="1.9304" dy="1.905" layer="1"/>
+<smd name="MISO" x="0" y="6" dx="1.9304" dy="0.8128" layer="1"/>
+<smd name="MOSI" x="0" y="10" dx="1.9304" dy="0.8128" layer="1"/>
+<smd name="SCLK" x="0" y="8" dx="1.9304" dy="0.8128" layer="1"/>
+<smd name="VCC" x="0" y="14" dx="1.9304" dy="0.8128" layer="1"/>
 <text x="4.7488" y="0.5448" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 <package name="CC1101_MODULE1_DIL-2">
@@ -12748,24 +12747,6 @@ DIL version for mounting with pin header (and SMD soldering) and SMD only varian
 <technology name=""/>
 </technologies>
 </device>
-<device name="SMALL" package="CC1101_MODULE1_SMD">
-<connects>
-<connect gate="G$1" pin="ANT" pad="ANT"/>
-<connect gate="G$1" pin="CSN" pad="CSN"/>
-<connect gate="G$1" pin="GDO0" pad="GDO0"/>
-<connect gate="G$1" pin="GDO2" pad="GDO2"/>
-<connect gate="G$1" pin="GND@1" pad="GND@0"/>
-<connect gate="G$1" pin="GND@2" pad="GND@1"/>
-<connect gate="G$1" pin="GND@3" pad="GND@2"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="SCLK" pad="SCLK"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -12783,14 +12764,14 @@ DIL version for mounting with pin header (and SMD soldering) and SMD only varian
 </classes>
 <parts>
 <part name="U$1" library="maplemini-small" deviceset="MAPLEMINI" device=""/>
-<part name="CC1" library="Martin-Communication-V4" deviceset="CC1101_MODULE1" device="SMALL"/>
+<part name="CC1" library="CC1101" deviceset="CC1101_MODULE1" device="SMD"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="CC0" library="Martin-Communication-V4" deviceset="CC1101_MODULE1" device="SMALL" value="CC1101"/>
+<part name="CC0" library="CC1101" deviceset="CC1101_MODULE1" device="SMD" value="CC1101"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
