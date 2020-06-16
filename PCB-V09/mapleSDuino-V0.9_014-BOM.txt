@@ -1,0 +1,12 @@
+Stückliste exportiert aus C:/GitHub/MapleSDuino/PCB-V09/mapleSDuino-V0.9_014-eagle7-test.sch am 16.06.2020 11:19
+
+Part  Value              Device             Package            Description                                                                                                     PROD_ID   
+C5    10uF               CPOL-EUR/2012-12W  R/2012-12W         POLARIZED CAPACITOR, European symbol                                                                                      
+C6    22pF               C-EUC0805          C0805              CAPACITOR, European symbol                                                                                                
+CC0   CC1101             CC1101_MODULE1SMD  CC1101_MODULE1_SMD CC1101 wireless module for 433/868 MHz (sold from Aliexpress).                                                            
+CC1   CC1101_MODULE1SMD  CC1101_MODULE1SMD  CC1101_MODULE1_SMD CC1101 wireless module for 433/868 MHz (sold from Aliexpress).                                                            
+DBG                      CONN_05LOCK        1X05_LOCK          Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections           
+IC2   LAN-USR-ES1        LAN-USR-ES1        USR-ES1                                                                                                                                      
+U$1   MAPLEMINI          MAPLEMINI          20-DIP                                                                                                                                       
+X1                       SMACONNECTOR_EDGE  SMA_EDGELAUNCH     SMA Connector                                                                                                             
+X2                       SMACONNECTOR_EDGE  SMA_EDGELAUNCH     SMA Connector                                                                                                             
